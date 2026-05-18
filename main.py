@@ -15,7 +15,7 @@ async def cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton("✅ قبول", callback_data="take")]]
 
     msg = await update.message.reply_text(
-        f"🔢 كوماند #{counter}\n\n🚚 كوموند جديد:\n\n{text}",
+        f"🔢 كوماند #{counter}\n\n🚚 كومويد:\n\n{text}",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
