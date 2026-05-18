@@ -49,7 +49,7 @@ async def list_orders(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     msg = "📋 *لائحة الكوماندات:*\n\n"
     for msg_id, data in orders.items():
-        status = "✅ مخذوز" if data["taken"] else "⏳ في الانتظار"
+        status = "✅ دازت" if data["taken"] else "⏳ في الانتظار"
         msg += f"#{data['number']} {status} — {data['text']}\n"
 
     await update.message.reply_text(msg, parse_mode="Markdown")
